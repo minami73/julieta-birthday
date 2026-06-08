@@ -1,14 +1,14 @@
 // ─── SOUNDS ──────────────────────────────────────────────
-const sfxFanfare  = new Audio('sounds/fanfare.mp3');
+const sfxFanfare = new Audio('sounds/fanfare.mp3');
 const sfxCongrats = new Audio('sounds/congratulations.mp3');
 const sfxCheering = new Audio('sounds/cheering.mp3');
 
 function enterPage() {
-  const overlay = document.getElementById('intro-overlay');
-  overlay.classList.add('fade-out');
-  setTimeout(() => overlay.remove(), 650);
-  sfxFanfare.volume = 0.7;
-  sfxFanfare.play().catch(() => {});
+    const overlay = document.getElementById('intro-overlay');
+    overlay.classList.add('fade-out');
+    setTimeout(() => overlay.remove(), 650);
+    sfxFanfare.volume = 0.7;
+    sfxFanfare.play().catch(() => { });
 }
 
 function playCongratsSound() {
@@ -41,7 +41,7 @@ document.querySelectorAll('.fandom-chip[data-sound]').forEach(chip => {
         }
         // Reproduce el nuevo
         audio.currentTime = 0;
-        audio.play().catch(() => {});
+        audio.play().catch(() => { });
         chip.classList.add('playing');
         activeChip = chip;
         activeChipAudio = audio;
@@ -218,7 +218,7 @@ const audioBars = document.getElementById('audio-bars');
 
 function toggleAudio() {
     if (bdayAudio.paused) {
-        bdayAudio.play().catch(() => {});
+        bdayAudio.play().catch(() => { });
         playBtn.textContent = '⏸️';
         audioBars.classList.remove('paused');
     } else {
