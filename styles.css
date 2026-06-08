@@ -163,6 +163,24 @@
     animation: spinSlow 12s linear infinite;
   }
 
+  .v-pointer {
+    position: absolute;
+    top: 50%;
+    width: clamp(90px, 18vw, 160px);
+    height: auto;
+    z-index: 3;
+    pointer-events: none;
+    filter: drop-shadow(0 0 14px rgba(185,142,255,0.6));
+  }
+  .v-pointer.left {
+    left: clamp(-110px, -16vw, -50px);
+    transform: translateY(-50%) rotate(20deg);
+  }
+  .v-pointer.right {
+    right: clamp(-110px, -16vw, -50px);
+    transform: translateY(-50%) scaleX(-1) rotate(20deg);
+  }
+
   .name-main {
     font-family: 'Pacifico', cursive;
     font-size: clamp(4rem, 16vw, 10rem);
@@ -248,14 +266,35 @@
     box-shadow: 0 0 30px rgba(185,142,255,0.15), inset 0 0 30px rgba(185,142,255,0.05);
     animation: fadeIn 1s ease both 0.6s;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     margin-top: 2rem;
   }
   .message-card::before {
     content: '';
     position: absolute; inset: 0;
+    border-radius: inherit;
     background: linear-gradient(135deg, rgba(185,142,255,0.05) 0%, transparent 60%);
     pointer-events: none;
+  }
+
+  /* ─── BOXING-STYLE BANNERS ─── */
+  .box-banner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 92%;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 16px rgba(185,142,255,0.5));
+    z-index: 2;
+    pointer-events: none;
+  }
+  .box-banner.left {
+    left: clamp(-360px, -28vw, -120px);
+    transform: translateY(-50%) scaleX(-1);
+  }
+  .box-banner.right {
+    right: clamp(-350px, -28vw, -120px);
   }
 
   .congrats-kr {
@@ -553,4 +592,6 @@
   @media (max-width: 480px) {
     .name-main { font-size: 3.5rem; }
     .orbit-icon { font-size: 1.6rem; }
+    .v-pointer { display: none; }
+    .box-banner { display: none; }
   }
