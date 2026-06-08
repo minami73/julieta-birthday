@@ -1,7 +1,7 @@
 :root {
-    --celeste: #67C8FF;
-    --celeste-dark: #2A9FD6;
-    --celeste-light: #B8E8FF;
+    --lila: #B98EFF;
+    --lila-dark: #8A5FD6;
+    --lila-light: #E0CCFF;
     --black: #1a1a2e;
     --white: #f0faff;
     --pink: #FF87C3;
@@ -34,20 +34,20 @@
   #intro-title {
     font-family: 'Pacifico', cursive;
     font-size: clamp(1.8rem, 6vw, 3rem);
-    color: var(--celeste);
+    color: var(--lila);
     -webkit-text-stroke: 1.5px var(--black);
-    text-shadow: 0 0 20px var(--celeste), 3px 3px 0 var(--black);
+    text-shadow: 0 0 20px var(--lila), 3px 3px 0 var(--black);
   }
   #intro-btn {
     font-family: 'Fredoka One', cursive;
     font-size: 1.3rem;
-    background: linear-gradient(135deg, var(--celeste), var(--celeste-dark));
+    background: linear-gradient(135deg, var(--lila), var(--lila-dark));
     color: var(--black);
     border: 3px solid var(--black);
     border-radius: 50px;
     padding: 0.8rem 2.2rem;
     cursor: pointer;
-    box-shadow: 4px 4px 0 var(--black), 0 0 20px rgba(103,200,255,0.4);
+    box-shadow: 4px 4px 0 var(--black), 0 0 20px rgba(185,142,255,0.4);
     animation: wiggle 2s ease-in-out infinite 1s;
     transition: transform 0.15s;
   }
@@ -57,7 +57,7 @@
     background: var(--black);
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='28' font-size='28'%3E⭐%3C/text%3E%3C/svg%3E") 16 16, auto;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='28' font-size='28'%3E💜%3C/text%3E%3C/svg%3E") 16 16, auto;
   }
 
   /* ─── STARFIELD ─── */
@@ -111,18 +111,18 @@
   .happy-birthday-text {
     font-family: 'Pacifico', cursive;
     font-size: clamp(2rem, 7vw, 4.5rem);
-    color: var(--celeste);
+    color: var(--lila);
     -webkit-text-stroke: 2px var(--black);
     text-shadow:
-      0 0 10px var(--celeste),
-      0 0 30px var(--celeste-dark),
+      0 0 10px var(--lila),
+      0 0 30px var(--lila-dark),
       3px 3px 0 var(--black),
       -1px -1px 0 var(--black);
     animation: glow 2s ease-in-out infinite alternate;
   }
   @keyframes glow {
-    from { text-shadow: 0 0 10px var(--celeste), 3px 3px 0 var(--black); }
-    to   { text-shadow: 0 0 25px var(--celeste), 0 0 50px var(--celeste-light), 3px 3px 0 var(--black); }
+    from { text-shadow: 0 0 10px var(--lila), 3px 3px 0 var(--black); }
+    to   { text-shadow: 0 0 25px var(--lila), 0 0 50px var(--lila-light), 3px 3px 0 var(--black); }
   }
 
   .subtitle {
@@ -162,12 +162,12 @@
   .name-main {
     font-family: 'Pacifico', cursive;
     font-size: clamp(4rem, 16vw, 10rem);
-    color: var(--celeste);
+    color: var(--lila);
     -webkit-text-stroke: 3px var(--black);
     text-shadow:
       4px 4px 0 var(--black),
       -2px -2px 0 var(--black),
-      0 0 40px rgba(103,200,255,0.5);
+      0 0 40px rgba(185,142,255,0.5);
     position: relative; z-index: 2;
     animation: namePulse 3s ease-in-out infinite;
   }
@@ -211,11 +211,11 @@
     width: 160px; height: 160px;
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    border: 4px solid var(--celeste);
+    border: 4px solid var(--lila);
     box-shadow:
-      0 0 16px var(--celeste),
-      0 0 40px rgba(103,200,255,0.5),
-      0 0 70px rgba(103,200,255,0.25);
+      0 0 16px var(--lila),
+      0 0 40px rgba(185,142,255,0.5),
+      0 0 70px rgba(185,142,255,0.25);
     animation: badgeSpin 6s ease-in-out infinite;
     flex-shrink: 0;
   }
@@ -223,8 +223,8 @@
     font-family: 'Fredoka One', cursive;
     font-size: 3.5rem;
     line-height: 1;
-    color: var(--celeste);
-    text-shadow: 0 0 10px var(--celeste), 0 0 25px rgba(103,200,255,0.7);
+    color: var(--lila);
+    text-shadow: 0 0 10px var(--lila), 0 0 25px rgba(185,142,255,0.7);
   }
   @keyframes badgeSpin {
     0%, 100% { transform: rotate(-5deg) scale(1); }
@@ -233,15 +233,15 @@
 
   /* ─── MESSAGE CARD ─── */
   .message-card {
-    background: rgba(103,200,255,0.08);
-    border: 2px solid var(--celeste);
+    background: rgba(185,142,255,0.08);
+    border: 2px solid var(--lila);
     border-radius: 24px;
     padding: 2rem 2.5rem;
     max-width: 680px;
     width: 90%;
     text-align: center;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(103,200,255,0.15), inset 0 0 30px rgba(103,200,255,0.05);
+    box-shadow: 0 0 30px rgba(185,142,255,0.15), inset 0 0 30px rgba(185,142,255,0.05);
     animation: fadeIn 1s ease both 0.6s;
     position: relative;
     overflow: hidden;
@@ -250,12 +250,12 @@
   .message-card::before {
     content: '';
     position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(103,200,255,0.05) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(185,142,255,0.05) 0%, transparent 60%);
     pointer-events: none;
   }
 
-  .congrats-jp {
-    font-family: 'Noto Sans JP', sans-serif;
+  .congrats-kr {
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: clamp(1.6rem, 5vw, 2.8rem);
     font-weight: 700;
     color: var(--pink);
@@ -265,13 +265,13 @@
     transition: transform 0.2s, letter-spacing 0.2s;
     display: inline-block;
   }
-  .congrats-jp:hover {
+  .congrats-kr:hover {
     transform: scale(1.08);
     letter-spacing: 3px;
   }
   @keyframes rainbow {
     0%   { color: var(--pink); }
-    25%  { color: var(--celeste); }
+    25%  { color: var(--lila); }
     50%  { color: var(--yellow); }
     75%  { color: var(--purple); }
     100% { color: var(--pink); }
@@ -288,7 +288,7 @@
     margin: 1.2rem auto;
     width: 60%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--celeste), transparent);
+    background: linear-gradient(90deg, transparent, var(--lila), transparent);
     border-radius: 2px;
   }
 
@@ -299,7 +299,7 @@
     font-weight: 600;
   }
   .message-text .highlight {
-    color: var(--celeste);
+    color: var(--lila);
     font-weight: 700;
   }
   .message-text .emoji-pop {
@@ -331,7 +331,7 @@
 
   .fandom-chip {
     background: rgba(255,255,255,0.05);
-    border: 2px solid var(--celeste);
+    border: 2px solid var(--lila);
     border-radius: 50px;
     padding: 0.5rem 1.3rem;
     color: var(--white);
@@ -343,20 +343,20 @@
     position: relative; overflow: hidden;
   }
   .fandom-chip:hover {
-    background: var(--celeste);
+    background: var(--lila);
     color: var(--black);
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(103,200,255,0.4);
+    box-shadow: 0 8px 20px rgba(185,142,255,0.4);
   }
   .fandom-chip.playing {
-    background: var(--celeste);
+    background: var(--lila);
     color: var(--black);
-    box-shadow: 0 0 18px rgba(103,200,255,0.7);
+    box-shadow: 0 0 18px rgba(185,142,255,0.7);
     animation: chipPulse 1s ease-in-out infinite;
   }
   @keyframes chipPulse {
-    0%, 100% { box-shadow: 0 0 12px rgba(103,200,255,0.5); }
-    50%       { box-shadow: 0 0 28px rgba(103,200,255,0.9); }
+    0%, 100% { box-shadow: 0 0 12px rgba(185,142,255,0.5); }
+    50%       { box-shadow: 0 0 28px rgba(185,142,255,0.9); }
   }
   .fandom-chip:hover::before {
     content: attr(data-fact);
@@ -365,8 +365,8 @@
     left: 50%;
     transform: translateX(-50%);
     background: var(--black);
-    color: var(--celeste);
-    border: 1px solid var(--celeste);
+    color: var(--lila);
+    border: 1px solid var(--lila);
     border-radius: 10px;
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
@@ -384,10 +384,10 @@
   }
 
   .gif-frame {
-    border: 4px solid var(--celeste);
+    border: 4px solid var(--lila);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 30px rgba(103,200,255,0.3), 8px 8px 0 var(--black);
+    box-shadow: 0 0 30px rgba(185,142,255,0.3), 8px 8px 0 var(--black);
     max-width: min(90vw, 480px);
     position: relative;
   }
@@ -399,7 +399,7 @@
     position: absolute;
     bottom: 0; left: 0; right: 0;
     background: linear-gradient(transparent, rgba(0,0,0,0.7));
-    color: var(--celeste);
+    color: var(--lila);
     font-family: 'Fredoka One', cursive;
     padding: 1rem;
     text-align: center;

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🎉 Feliz Cumpleaños Mildredu-chan! 🎉</title>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+JP:wght@400;700&family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<title>🎉 Feliz Cumpleaños Julieta! 🎉</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+KR:wght@400;700&family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,14 +31,14 @@
   <!-- HEADER -->
   <div class="header-section">
     <div class="happy-birthday-text">✨ Happy Birthday ✨</div>
-    <div class="subtitle">~ Mildredu-chan ~</div>
+    <div class="subtitle">~ Julieta ~</div>
   </div>
 
   <!-- NAME + ORBIT -->
   <div class="name-card">
     <div class="name-wrapper">
       <div class="orbit-container" id="orbit-container"></div>
-      <div class="name-main">Mildredu</div>
+      <div class="name-main">Julieta</div>
     </div>
   </div>
 
@@ -46,20 +46,20 @@
   <div class="age-badge-wrapper">
     <span class="badge-cake-ext">🎂</span>
     <div class="age-badge">
-      <span class="badge-num">13</span>
+      <span class="badge-num">15</span>
     </div>
     <span class="badge-cake-ext">🎂</span>
   </div>
 
   <!-- MESSAGE CARD -->
   <div class="message-card">
-    <div class="congrats-jp" id="congrats-jp" onclick="playCongratsSound()" title="¡Toca para escuchar! 🎉">おめでとうございます！</div>
+    <div class="congrats-kr" id="congrats-kr" onclick="playCongratsSound()" title="¡Toca para escuchar! 🎉">축하합니다!</div>
     <div class="congrats-translation">(Congratulations!)</div>
     <div class="divider"></div>
     <div class="message-text">
-      Hoy cumples <span class="highlight">13 añotes</span> <span class="emoji-pop">🎉</span><br>
+      Hoy cumples <span class="highlight">15 añotes</span> <span class="emoji-pop">🎉</span><br>
       que no es poca cosa, ¡ya eres toda una señorita! <span class="emoji-pop">✨</span><br><br>
-      Que <span class="highlight">Mico</span> te dedique una canción 🎵, que <span class="highlight">Alien Stage</span> tenga segunda temporada 🛸, que <span class="highlight">Rin y Len</span> sean reales 🎤 y que el anime nunca te falte 🌸<br><br>
+      Que <span class="highlight">V de BTS</span> te dedique una canción 💜, que tu casa de <span class="highlight">Harry Potter</span> gane la copa 🏆, que encuentres tu próximo dorama coreano favorito 🎬 y que <span class="highlight">Daft Punk, The Weeknd, Morat y Sabrina Carpenter</span> jamás falten en tu playlist 🎧<br><br>
       <em style="color: rgba(255,255,255,0.4); font-size: 0.85rem;">(Honestamente no sé si alguna de esas cosas va a pasar, pero tú mereces que sucedan todas 😌)</em>
     </div>
     <div class="from-text">— Con cariño: profe Jared 🎓 —</div>
@@ -67,32 +67,31 @@
 
   <!-- FANDOM CHIPS -->
   <div class="fandom-section">
-    <div class="fandom-chip" data-fact="♪ Homesick · click para escuchar" data-sound="sounds/homesick.mp3">🎵 Mico</div>
-    <div class="fandom-chip" data-fact="♪ Alien · click para escuchar" data-sound="sounds/alien.mp3">🛸 Alien Stage</div>
-    <div class="fandom-chip" data-fact="♪ Teddy · click para escuchar" data-sound="sounds/teddy.mp3">🎤 Kagamine Rin</div>
+    <div class="fandom-chip" data-fact="♪ V (BTS) · click para escuchar" data-sound="sounds/v.mp3">💜 V de BTS</div>
+    <div class="fandom-chip" data-fact="♪ Harry Potter · click para escuchar" data-sound="sounds/harrypotter.mp3">⚡ Harry Potter</div>
+    <div class="fandom-chip" data-fact="♪ Doramas · click para escuchar" data-sound="sounds/doramas.mp3">🎬 Doramas Coreanos</div>
   </div>
 
   <!-- GIF SECTION -->
   <div class="media-section">
     <div class="gif-frame">
-      <!-- Anime celebration GIF from Tenor (public) -->
-      <img 
-        src="https://media.tenor.com/Gl5kzpfYB2EAAAAC/happy-birthday-anime.gif"
-        alt="Anime feliz cumpleaños"
-        onerror="this.src='https://media.tenor.com/xvQW5SXtQBkAAAAC/birthday-cake.gif'"
+      <!-- Celebration GIF from Tenor (public) -->
+      <img
+        src="https://media.tenor.com/xvQW5SXtQBkAAAAC/birthday-cake.gif"
+        alt="Celebración de cumpleaños"
       >
-      <div class="gif-label">🎉 ¡Todos en el anime celebrando contigo! 🎉</div>
+      <div class="gif-label">🎉 ¡Celebrando tus 15 contigo! 🎉</div>
     </div>
   </div>
 
   <!-- AUDIO SECTION -->
   <div class="audio-section">
-    <div class="audio-label">🎹 Tema Vocaloid para tu cumple 🎹</div>
+    <div class="audio-label">💜 Tu canción especial para tu cumple 💜</div>
     <div class="audio-player-custom">
       <button class="play-btn" id="play-btn" onclick="toggleAudio()">▶️</button>
       <div class="audio-info">
-        <div class="audio-title">Tetoris — Hiiragi Magnetite</div>
-        <div class="audio-sub">Vocaloid • ¡para escuchar en bucle! 🎊</div>
+        <div class="audio-title">Sweet Night — V (BTS)</div>
+        <div class="audio-sub">OST de Itaewon Class • ¡para escuchar en bucle! 🎊</div>
       </div>
       <div class="audio-bars paused" id="audio-bars">
         <div class="audio-bar" style="--h:10px"></div>
@@ -102,7 +101,7 @@
         <div class="audio-bar" style="--h:8px"></div>
       </div>
     </div>
-    <audio id="tetoris-audio" src="sounds/tetoris.mp3"></audio>
+    <audio id="bday-audio" src="sounds/sweetnight.mp3"></audio>
   </div>
 
   <!-- SURPRISE BUTTON -->
@@ -113,7 +112,7 @@
 
   <!-- FOOTER -->
   <div class="footer">
-    Hecho con mucho ✨ por Profe Jared • Mayo 2026
+    Hecho con mucho ✨ por Profe Jared • Junio 2026
   </div>
 
 </div>

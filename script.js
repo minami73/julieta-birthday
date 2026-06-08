@@ -100,7 +100,7 @@ cc.width = window.innerWidth;
 cc.height = window.innerHeight;
 window.addEventListener('resize', () => { cc.width = window.innerWidth; cc.height = window.innerHeight; });
 
-const COLORS = ['#67C8FF', '#FF87C3', '#FFE066', '#C89BFF', '#B8E8FF', '#FF6B6B'];
+const COLORS = ['#B98EFF', '#FF87C3', '#FFE066', '#C89BFF', '#E0CCFF', '#FF6B6B'];
 let confetti = [];
 
 function spawnConfetti(n = 60) {
@@ -147,7 +147,7 @@ drawConfetti();
 spawnConfetti(120);
 
 // ─── FLOATING EMOJIS ─────────────────────────────────────
-const floaterEmojis = ['🌸', '🎵', '⭐', '💙', '🎹', '🛸', '🎊', '✨', '🎤', '🎂', '🎀', '🌟'];
+const floaterEmojis = ['💜', '📚', '⭐', '🎬', '🎧', '⚡', '🎊', '✨', '🎤', '🎂', '🎀', '🌟'];
 const floaterContainer = document.getElementById('floaters');
 for (let i = 0; i < 18; i++) {
     const el = document.createElement('div');
@@ -161,7 +161,7 @@ for (let i = 0; i < 18; i++) {
 }
 
 // ─── ORBITING ICONS ──────────────────────────────────────
-const orbitIcons = ['🎵', '🛸', '🎤', '🌸', '💙', '⭐', '🎹', '🎊', '🌟', '🎀'];
+const orbitIcons = ['💜', '📚', '🎤', '⚡', '🎬', '⭐', '🎧', '🎊', '🌟', '🎀'];
 const orbitContainer = document.getElementById('orbit-container');
 const wrapperEl = document.querySelector('.name-wrapper');
 
@@ -212,50 +212,50 @@ document.addEventListener('click', e => {
 });
 
 // ─── AUDIO ───────────────────────────────────────────────
-const tetorisAudio = document.getElementById('tetoris-audio');
+const bdayAudio = document.getElementById('bday-audio');
 const playBtn = document.getElementById('play-btn');
 const audioBars = document.getElementById('audio-bars');
 
 function toggleAudio() {
-    if (tetorisAudio.paused) {
-        tetorisAudio.play().catch(() => {});
+    if (bdayAudio.paused) {
+        bdayAudio.play().catch(() => {});
         playBtn.textContent = '⏸️';
         audioBars.classList.remove('paused');
     } else {
-        tetorisAudio.pause();
+        bdayAudio.pause();
         playBtn.textContent = '▶️';
         audioBars.classList.add('paused');
     }
 }
 
-tetorisAudio.addEventListener('ended', () => {
+bdayAudio.addEventListener('ended', () => {
     playBtn.textContent = '▶️';
     audioBars.classList.add('paused');
 });
 
 // ─── SURPRISE MESSAGES ───────────────────────────────────
 const surprises = [
-    `🎉 ¡DATOS IMPORTANTES SOBRE MILDREDU-CHAN!<br><br>
-   🌟 Tiene un gusto musical que el profe Jared definitivamente no entiende del todo... y eso está perfectamente bien.<br>
-   🛸 Sospechamos que en realidad es un personaje de Alien Stage que se filtró a la realidad.<br>
-   🎹 Si Kagamine Rin y Len supieran de ella, le harían una canción.<br>
-   💙 Su color favorito es el celeste porque inconscientemente sabe que es el color del cielo y el mar y la perfección.`,
+    `🎉 ¡DATOS IMPORTANTES SOBRE JULIETA!<br><br>
+   🌟 Tiene un gusto musical que combina K-pop con Daft Punk, The Weeknd, Morat y Sabrina Carpenter... y de algún modo todo encaja.<br>
+   ⚡ Sospechamos que en realidad pertenece a Hogwarts y aún está esperando su carta.<br>
+   📚 Si le preguntas, seguro ya tiene su próximo dorama coreano en la lista de espera.<br>
+   💜 Su color favorito es el lila porque inconscientemente sabe que es el color de la realeza... y de los buenos gustos.`,
 
-    `😂 TEORÍAS CONSPIRATIVAS SOBRE SUS 13 AÑOS:<br><br>
-   • A esta edad ya sabe más de anime que muchos adultos juntos.<br>
-   • Probablemente pueda cantar Miku mejor que Miku misma.<br>
-   • No sabemos si cumplió 13 o si ya tiene 1300 años de otaku.<br>
-   • El universo sigue sin responder por qué Alien Stage no tiene segunda temp. 🛸`,
+    `😂 TEORÍAS CONSPIRATIVAS SOBRE SUS 15 AÑOS:<br><br>
+   • A esta edad ya sabe más de K-dramas que muchos adultos juntos.<br>
+   • Probablemente pueda recitar las casas de Hogwarts más rápido que el Sombrero Seleccionador.<br>
+   • No sabemos si cumplió 15 o si ya lleva 15 temporadas viendo doramas.<br>
+   • El universo sigue sin responder por qué V no le ha dedicado una canción todavía. 💜`,
 
-    `✨ UN MENSAJE DE KAGAMINE RIN & LEN:<br><br>
-   "Mildredu-chan, nosotros somos sintetizados pero nuestros buenos deseos para ti son 100% reales.
-   Feliz cumpleaños de parte de los gemelos más famosos de Vocaloid.
-   P.D. — Len dice que te pases a escuchar 'Servant of Evil'. Rin dice que no le hagas caso." 🎹`,
+    `✨ UN MENSAJE DE V (KIM TAE-HYUNG):<br><br>
+   "Julieta, aunque no puedo estar ahí en persona, mis canciones sí pueden.
+   Feliz cumpleaños de parte de tu bias favorito de BTS.
+   P.D. — Si alguien te pregunta cuál es tu OST favorita, ya sabes qué responder." 💜`,
 
     `🎓 UN MENSAJE DEL PROFE JARED:<br><br>
-   "Que cumplas muchos más, que el anime nunca se acabe,
-   que las canciones de Mico lleguen a México y
-   que siempre seas tan bacán como eres.
+   "Que cumplas muchos más, que los doramas nunca se acaben,
+   que encuentres entradas para el próximo concierto de BTS y
+   que siempre seas tan genial como eres.
    Y estudia.
    ... Aunque sea tantito."`,
 ];
@@ -281,6 +281,6 @@ document.addEventListener('keydown', e => {
     if (kIndex === konami.length) {
         kIndex = 0;
         for (let i = 0; i < 5; i++) setTimeout(() => spawnConfetti(100), i * 200);
-        alert('🎉 ¡KONAMI CODE! Mildredu-chan encontró el Easter Egg secreto. +1000 puntos otaku. ✨');
+        alert('🎉 ¡KONAMI CODE! Julieta encontró el Easter Egg secreto. +1000 puntos de bruja certificada por Hogwarts. ✨');
     }
 });
