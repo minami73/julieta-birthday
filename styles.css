@@ -48,10 +48,14 @@
     padding: 0.8rem 2.2rem;
     cursor: pointer;
     box-shadow: 4px 4px 0 var(--black), 0 0 20px rgba(185,142,255,0.4);
-    animation: wiggle 2s ease-in-out infinite 1s;
+    animation: pulseGlow 1.8s ease-in-out infinite;
     transition: transform 0.15s;
   }
-  #intro-btn:hover { transform: scale(1.07); }
+  @keyframes pulseGlow {
+    0%, 100% { transform: scale(1); box-shadow: 4px 4px 0 var(--black), 0 0 18px rgba(185,142,255,0.45); }
+    50%      { transform: scale(1.07); box-shadow: 4px 4px 0 var(--black), 0 0 38px rgba(185,142,255,0.85); }
+  }
+  #intro-btn:hover { transform: scale(1.12); }
 
   body {
     background: var(--black);
@@ -416,6 +420,7 @@
     font-family: 'Fredoka One', cursive;
     font-size: 1.1rem;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   .audio-player-custom {
@@ -484,12 +489,7 @@
     cursor: pointer;
     box-shadow: 4px 4px 0 var(--black);
     transition: all 0.2s;
-    animation: wiggle 3s ease-in-out infinite 2s;
-  }
-  @keyframes wiggle {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(-3deg); }
-    75% { transform: rotate(3deg); }
+    animation: pulseGlow 1.8s ease-in-out infinite;
   }
   .surprise-btn:hover {
     transform: translateY(-4px);

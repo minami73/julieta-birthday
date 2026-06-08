@@ -236,9 +236,9 @@ bdayAudio.addEventListener('ended', () => {
 // ─── SURPRISE MESSAGES ───────────────────────────────────
 const surprises = [
     `🎉 ¡DATOS IMPORTANTES SOBRE JULIETA!<br><br>
-   🌟 Tiene un gusto musical que combina K-pop con Daft Punk, The Weeknd, Morat y Sabrina Carpenter... y de algún modo todo encaja.<br>
+   🌟 Tiene un gusto musical que combina K-pop con Daft Punk, The Weeknd y Sabrina Carpenter... y de algún modo todo encaja.<br>
    ⚡ Sospechamos que en realidad pertenece a Hogwarts y aún está esperando su carta.<br>
-   📚 Si le preguntas, seguro ya tiene su próximo dorama coreano en la lista de espera.<br>
+   📚 Sin duda alguna es una alumna muy aplicada, simpática y alegre, muchas cosas buenas para ella vendrán.<br>
    💜 Su color favorito es el lila porque inconscientemente sabe que es el color de la realeza... y de los buenos gustos.`,
 
     `😂 TEORÍAS CONSPIRATIVAS SOBRE SUS 15 AÑOS:<br><br>
@@ -253,10 +253,8 @@ const surprises = [
    P.D. — Si alguien te pregunta cuál es tu OST favorita, ya sabes qué responder." 💜`,
 
     `🎓 UN MENSAJE DEL PROFE JARED:<br><br>
-   "Que cumplas muchos más, que los doramas nunca se acaben,
-   que encuentres entradas para el próximo concierto de BTS y
-   que siempre seas tan genial como eres.
-   Y estudia.
+   "Que cumplas muchos más, y que siempre seas tan genial como eres.
+   Sigue preparandote...
    ... Aunque sea tantito."`,
 ];
 let surpriseIndex = 0;

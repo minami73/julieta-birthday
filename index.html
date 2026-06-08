@@ -1,122 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🎉 Feliz Cumpleaños Julieta! 🎉</title>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+KR:wght@400;700&family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Feliz Cumpleaños Julieta! 🎉</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+KR:wght@400;700&family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- INTRO OVERLAY -->
-<div id="intro-overlay">
-  <div id="intro-box">
-    <div id="intro-emoji">🎂✨🎉</div>
-    <div id="intro-title">¡Feliz Cumpleaños!</div>
-    <button id="intro-btn" onclick="enterPage()">Toca para celebrar 🎊</button>
-  </div>
-</div>
-
-<!-- Starfield -->
-<canvas id="starfield"></canvas>
-<!-- Confetti -->
-<canvas id="confetti-canvas"></canvas>
-
-<!-- Floating emojis background -->
-<div class="floaters" id="floaters"></div>
-
-<div class="page">
-
-  <!-- HEADER -->
-  <div class="header-section">
-    <div class="happy-birthday-text">✨ Happy Birthday ✨</div>
-    <div class="subtitle">~ Julieta ~</div>
-  </div>
-
-  <!-- NAME + ORBIT -->
-  <div class="name-card">
-    <div class="name-wrapper">
-      <div class="orbit-container" id="orbit-container"></div>
-      <div class="name-main">Penélope</div>
+    <!-- INTRO OVERLAY -->
+    <div id="intro-overlay">
+        <div id="intro-box">
+            <div id="intro-emoji">🎂✨🎉</div>
+            <div id="intro-title">¡Feliz Cumpleaños!</div>
+            <button id="intro-btn" onclick="enterPage()">Toca para celebrar 🎊</button>
+        </div>
     </div>
-  </div>
 
-  <!-- AGE BADGE -->
-  <div class="age-badge-wrapper">
-    <span class="badge-cake-ext">🎂</span>
-    <div class="age-badge">
-      <span class="badge-num">15</span>
+    <!-- Starfield -->
+    <canvas id="starfield"></canvas>
+    <!-- Confetti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Floating emojis background -->
+    <div class="floaters" id="floaters"></div>
+
+    <div class="page">
+
+        <!-- HEADER -->
+        <div class="header-section">
+            <div class="happy-birthday-text">✨ Happy Birthday ✨</div>
+            <div class="subtitle">~ Alan Walker ~</div>
+        </div>
+
+        <!-- NAME + ORBIT -->
+        <div class="name-card">
+            <div class="name-wrapper">
+                <div class="orbit-container" id="orbit-container"></div>
+                <div class="name-main">Penélope</div>
+            </div>
+        </div>
+
+        <!-- AGE BADGE -->
+        <div class="age-badge-wrapper">
+            <span class="badge-cake-ext">🎂</span>
+            <div class="age-badge">
+                <span class="badge-num">15</span>
+            </div>
+            <span class="badge-cake-ext">🎂</span>
+        </div>
+
+        <!-- MESSAGE CARD -->
+        <div class="message-card">
+            <div class="congrats-kr" id="congrats-kr" onclick="playCongratsSound()" title="¡Toca para escuchar! 🎉">
+                축하합니다!</div>
+            <div class="congrats-translation">(Congratulations!)</div>
+            <div class="divider"></div>
+            <div class="message-text">
+                Hoy cumples <span class="highlight">15 añotes</span> Julieta, <span class="emoji-pop">🎉</span><br>
+                ¡ya eres toda una señorita! <span class="emoji-pop">✨</span><br><br>
+                Que <span class="highlight">V de BTS</span> te dedique una canción 💜, que tu casa de <span
+                    class="highlight">Harry Potter</span> gane la copa 🏆, que encuentres tu próximo dorama coreano
+                favorito 🎬 y que <span class="highlight">Daft Punk, The Weeknd y Sabrina Carpenter</span> jamás falten
+                en tu playlist 🎧<br><br>
+                <em style="color: rgba(255,255,255,0.4); font-size: 0.85rem;">(Honestamente no sé si alguna de esas
+                    cosas va a pasar, pero tú mereces que sucedan todas 😌)</em>
+            </div>
+            <div class="from-text">— Con cariño: profe Jared 🎓 —</div>
+        </div>
+
+        <!-- FANDOM CHIPS -->
+        <div class="fandom-section">
+            <div class="fandom-chip" data-fact="♪ One More Time · click para escuchar"
+                data-sound="sounds/onemoretime.mp3">🎵 Daft Punk</div>
+            <div class="fandom-chip" data-fact="♪ Blinding Lights · click para escuchar"
+                data-sound="sounds/blindinglights.mp3">🎵 The Weeknd</div>
+            <div class="fandom-chip" data-fact="♪ Manchild · click para escuchar" data-sound="sounds/manchild.mp3">🎵
+                Sabrina Carpenter</div>
+        </div>
+
+        <!-- GIF SECTION -->
+        <div class="media-section">
+            <div class="gif-frame">
+                <!-- Celebration GIF from Tenor (public) -->
+                <img src="https://media.tenor.com/xvQW5SXtQBkAAAAC/birthday-cake.gif" alt="Celebración de cumpleaños">
+                <div class="gif-label">🎉 ¡Celebrando tus 15 contigo! 🎉</div>
+            </div>
+        </div>
+
+        <!-- AUDIO SECTION -->
+        <div class="audio-section">
+            <div class="audio-label">💜 Tu canción especial para tu cumple 💜</div>
+            <div class="audio-player-custom">
+                <button class="play-btn" id="play-btn" onclick="toggleAudio()">▶️</button>
+                <div class="audio-info">
+                    <div class="audio-title">Dynamite — BTS</div>
+                    <div class="audio-sub">Disco-Pop • ¡para bailar todo el día! 🎊</div>
+                </div>
+                <div class="audio-bars paused" id="audio-bars">
+                    <div class="audio-bar" style="--h:10px"></div>
+                    <div class="audio-bar" style="--h:18px"></div>
+                    <div class="audio-bar" style="--h:14px"></div>
+                    <div class="audio-bar" style="--h:20px"></div>
+                    <div class="audio-bar" style="--h:8px"></div>
+                </div>
+            </div>
+            <audio id="bday-audio" src="sounds/dynamite.mp3"></audio>
+        </div>
+
+        <!-- SURPRISE BUTTON -->
+        <button class="surprise-btn" onclick="showSurprise()">
+            🎁 Toca aquí si quieres otra sorpresa 👀
+        </button>
+        <div id="surprise-msg"></div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            Hecho con mucho ✨ por Profe Jared • Junio 2026
+        </div>
+
     </div>
-    <span class="badge-cake-ext">🎂</span>
-  </div>
 
-  <!-- MESSAGE CARD -->
-  <div class="message-card">
-    <div class="congrats-kr" id="congrats-kr" onclick="playCongratsSound()" title="¡Toca para escuchar! 🎉">축하합니다!</div>
-    <div class="congrats-translation">(Congratulations!)</div>
-    <div class="divider"></div>
-    <div class="message-text">
-      Hoy cumples <span class="highlight">15 añotes</span> <span class="emoji-pop">🎉</span><br>
-      que no es poca cosa, ¡ya eres toda una señorita! <span class="emoji-pop">✨</span><br><br>
-      Que <span class="highlight">V de BTS</span> te dedique una canción 💜, que tu casa de <span class="highlight">Harry Potter</span> gane la copa 🏆, que encuentres tu próximo dorama coreano favorito 🎬 y que <span class="highlight">Daft Punk, The Weeknd, Morat y Sabrina Carpenter</span> jamás falten en tu playlist 🎧<br><br>
-      <em style="color: rgba(255,255,255,0.4); font-size: 0.85rem;">(Honestamente no sé si alguna de esas cosas va a pasar, pero tú mereces que sucedan todas 😌)</em>
-    </div>
-    <div class="from-text">— Con cariño: profe Jared 🎓 —</div>
-  </div>
-
-  <!-- FANDOM CHIPS -->
-  <div class="fandom-section">
-    <div class="fandom-chip" data-fact="♪ V (BTS) · click para escuchar" data-sound="sounds/v.mp3">💜 V de BTS</div>
-    <div class="fandom-chip" data-fact="♪ Harry Potter · click para escuchar" data-sound="sounds/harrypotter.mp3">⚡ Harry Potter</div>
-    <div class="fandom-chip" data-fact="♪ Doramas · click para escuchar" data-sound="sounds/doramas.mp3">🎬 Doramas Coreanos</div>
-  </div>
-
-  <!-- GIF SECTION -->
-  <div class="media-section">
-    <div class="gif-frame">
-      <!-- Celebration GIF from Tenor (public) -->
-      <img
-        src="https://media.tenor.com/xvQW5SXtQBkAAAAC/birthday-cake.gif"
-        alt="Celebración de cumpleaños"
-      >
-      <div class="gif-label">🎉 ¡Celebrando tus 15 contigo! 🎉</div>
-    </div>
-  </div>
-
-  <!-- AUDIO SECTION -->
-  <div class="audio-section">
-    <div class="audio-label">💜 Tu canción especial para tu cumple 💜</div>
-    <div class="audio-player-custom">
-      <button class="play-btn" id="play-btn" onclick="toggleAudio()">▶️</button>
-      <div class="audio-info">
-        <div class="audio-title">Sweet Night — V (BTS)</div>
-        <div class="audio-sub">OST de Itaewon Class • ¡para escuchar en bucle! 🎊</div>
-      </div>
-      <div class="audio-bars paused" id="audio-bars">
-        <div class="audio-bar" style="--h:10px"></div>
-        <div class="audio-bar" style="--h:18px"></div>
-        <div class="audio-bar" style="--h:14px"></div>
-        <div class="audio-bar" style="--h:20px"></div>
-        <div class="audio-bar" style="--h:8px"></div>
-      </div>
-    </div>
-    <audio id="bday-audio" src="sounds/sweetnight.mp3"></audio>
-  </div>
-
-  <!-- SURPRISE BUTTON -->
-  <button class="surprise-btn" onclick="showSurprise()">
-    🎁 Toca aquí si quieres otra sorpresa 👀
-  </button>
-  <div id="surprise-msg"></div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    Hecho con mucho ✨ por Profe Jared • Junio 2026
-  </div>
-
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
