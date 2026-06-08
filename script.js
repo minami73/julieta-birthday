@@ -254,7 +254,7 @@ const surprises = [
 
     `🎓 UN MENSAJE DEL PROFE JARED:<br><br>
    "Que cumplas muchos más, y que siempre seas tan genial como eres.
-   Sigue preparandote...
+   Sigue preparandote
    ... Aunque sea tantito."`,
 ];
 let surpriseIndex = 0;
